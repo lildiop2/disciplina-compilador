@@ -29,5 +29,10 @@ public class operador{
 	 if (readch('>')) return Word.mgt;
 	 else return new Token('>');
         }
+
+	 //Caracteres não especificados
+	 Token t = new Token(ch);
+	 ch = ' ';
+	 return t;
     }
 }
